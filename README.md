@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/ezyr9/udacity-project-4.svg?style=svg)](https://circleci.com/gh/ezyr9/udacity-project-4)
+[![CircleCI](https://circleci.com/gh/bobbynguyen147/DevOps_Microservices.svg?style=svg)](https://circleci.com/gh/bobbynguyen147/DevOps_Microservices)
 
 ## Cloud DevOps ND - C4- Microservices at Scale using AWS & Kubernetes - Supporting Material and Project Starter
 
