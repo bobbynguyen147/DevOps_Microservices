@@ -1,32 +1,34 @@
+[![CircleCI](https://circleci.com/gh/bobbynguyen147/DevOps_Microservices.svg?style=svg)](https://circleci.com/gh/bobbynguyen147/DevOps_Microservices)
+
 ## Cloud DevOps ND - C4- Microservices at Scale using AWS & Kubernetes - Supporting Material and Project Starter
 
 This repository is associated with Cloud DevOps ND - Course 04 - Microservices at Scale using AWS & Kubernetes. In here, you'll find:
-1. Supporting material used in the video demonstration in the course 
+1. Supporting material used in the video demonstration in the course
 1. Starting code for a project, in which you can containerize and deploy a machine learning srevice using Kubernetes.
 
 ---
 
 ### A. Dependencies
 #### A.1. Python
-[Download and install the python](https://www.python.org/downloads/). 
+[Download and install the python](https://www.python.org/downloads/).
 
 #### A.2. Docker Desktop
-You would require you to install Docker Desktop to create containers for individual microservices. Refer the following links for instructions 
-* [macOS](https://docs.docker.com/docker-for-mac/install/), 
-* [Windows 10 64-bit: Pro, Enterprise, or Education](https://docs.docker.com/docker-for-windows/install/), 
-* [Windows  10 64-bit Home](https://docs.docker.com/toolbox/toolbox_install_windows/). 
+You would require you to install Docker Desktop to create containers for individual microservices. Refer the following links for instructions
+* [macOS](https://docs.docker.com/docker-for-mac/install/),
+* [Windows 10 64-bit: Pro, Enterprise, or Education](https://docs.docker.com/docker-for-windows/install/),
+* [Windows  10 64-bit Home](https://docs.docker.com/toolbox/toolbox_install_windows/).
 * You can find installation instructions for other operating systems at:  https://docs.docker.com/install/
 
-#### A.3. Kubernetes 
+#### A.3. Kubernetes
 You would need to install any one tool for creating a Kubernetes cluster - KubeOne / Minikube / kubectl on top of Docker Desktop:
 1. [Install and Set Up kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) directly on top of Docker desktop - For Windows/macOS
 2. [Install Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) - For Linux/macOS
 
 #### A.4. AWS account to access AWS Lambda
-You'll need an [AWS account](https://aws.amazon.com/free/?all-free-tier.&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc) to get started with [AWS Lambda](https://aws.amazon.com/lambda/), which is a serverless computing platform on cloud.  
+You'll need an [AWS account](https://aws.amazon.com/free/?all-free-tier.&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc) to get started with [AWS Lambda](https://aws.amazon.com/lambda/), which is a serverless computing platform on cloud.
 
 #### A.5. An account with Circle CI
-You may sign up on [CircleCI.com](https://circleci.com/signup/) with your GitHub credentials. 
+You may sign up on [CircleCI.com](https://circleci.com/signup/) with your GitHub credentials.
 
 ---
 
@@ -48,7 +50,7 @@ You may sign up on [CircleCI.com](https://circleci.com/signup/) with your GitHub
 
 * [Operationalize a Machine Learning Microservice API](https://github.com/udacity/DevOps_Microservices/tree/master/project-ml-microservice-kubernetes): Deploy a containerized, machine learning application using Kubernetes.
 
-To run any project code, you'll have to set up a virtual environment with the project dependencies. All of the following instructions are to be completed via a terminal/command line prompt. 
+To run any project code, you'll have to set up a virtual environment with the project dependencies. All of the following instructions are to be completed via a terminal/command line prompt.
 
 ### E. Create and Activate an Environment
 
@@ -57,7 +59,7 @@ These instructions also assume you have `git` installed for working with Github 
 
 **Now, you're ready to create your local environment!**
 
-1. If you haven't already done so, clone the project repository, and navigate to the main project folder. 
+1. If you haven't already done so, clone the project repository, and navigate to the main project folder.
 ```bash
 git clone https://github.com/udacity/DevOps_Microservices.git
 cd DevOps_Microservices/project-ml-microservice-kubernetes
@@ -76,7 +78,7 @@ At this point your command line should look something like: `(.devops) <User>:pr
 make install
 ```
 
-Now most of the `.devops` libraries are available to you. There are a couple of other libraries that we'll be using, which can be downloaded as specified, below. 
+Now most of the `.devops` libraries are available to you. There are a couple of other libraries that we'll be using, which can be downloaded as specified, below.
 
 ---
 
@@ -101,7 +103,7 @@ You will need to use Docker to build and upload a containerized application. If 
 
 This project also must pass two lint checks; `hadolint` checks the Dockerfile for errors and `pylint` checks the `app.py` source code for errors.
 
-1. Install `hadolint` following the instructions, [on hadolint's page]( https://github.com/hadolint/hadolint): 
+1. Install `hadolint` following the instructions, [on hadolint's page]( https://github.com/hadolint/hadolint):
 
 **For Mac:**
 ```bash
@@ -120,3 +122,17 @@ Your code has been rated at 10.00/10
 
 That's about it! When working with kubernetes, you may need to install some other libraries, but these instructions will set you up with an environment that can build and deploy Docker containers.
 
+
+### F. File Structure
+Folders
+```
+├── .circleci: Holds a config.yml that checks the project code for errors.
+├── project-ml-microservice-kubernetes: Starting code for a project, in which you can containerize and deploy a machine learning service using Kubernetes.
+└── Supporting-material: Supporting material used in the video demonstration in the course
+
+```
+Files
+```
+├── CODEOWNERS:
+└── LICENSE:
+```
